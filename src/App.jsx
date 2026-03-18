@@ -8,25 +8,21 @@ import Process from './components/Process';
 import Pricing from './components/Pricing';
 import Testimonials from './components/Testimonials';
 import CTA from './components/CTA';
-import Contact from './components/Contact';
 import Footer from './components/Footer';
 import FloatingZalo from './components/FloatingZalo';
 
 function App() {
   return (
-    <div className="font-sans antialiased text-gray-900 selection:bg-blue-200">
+    <div className="font-sans text-slate-800 bg-slate-50 dark:bg-slate-900 dark:text-slate-200 transition-colors antialiased selection:bg-primary/20">
       <Header />
-      <main>
-        <Hero />
-        <About />
-        <Services />
-        <CaseStudies />
-        <Process />
-        <Pricing />
-        <Testimonials />
-        <CTA />
-        <Contact />
-      </main>
+      <Hero />
+      <About />
+      <Services />
+      <CaseStudies />
+      <Process />
+      <Pricing />
+      <Testimonials />
+      <CTA />
       <Footer />
       <FloatingZalo />
     </div>

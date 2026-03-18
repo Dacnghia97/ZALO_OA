@@ -2,15 +2,27 @@
 
 /* Custom utility classes, variables, etc. can go here */
 @theme {
-  --color-primary-50: #eff6ff;
-  --color-primary-100: #dbeafe;
-  --color-primary-500: #3b82f6;
-  --color-primary-600: #2563eb;
-  --color-primary-700: #1d4ed8;
+  --color-primary: #0066ff;
+  --color-background-light: #f5f7f8;
+  --color-background-dark: #0f1723;
+  
+  --font-display: "Be Vietnam Pro", sans-serif;
+  --font-sans: "Be Vietnam Pro", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
-  background-color: #f8fafc;
-  color: #0f172a;
+  font-family: var(--font-display);
+  font-feature-settings: "kern" 1;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--color-background-light);
+  min-height: max(884px, 100dvh);
+}
+
+.glass-nav { 
+  backdrop-filter: blur(8px); 
+  background-color: rgba(245, 247, 248, 0.8); 
 }
